@@ -918,11 +918,11 @@ static const char __pyx_k_id_white_list[] = "id_white_list";
 static const char __pyx_k_add_stat_into_dicts[] = "_add_stat_into_dicts";
 static const char __pyx_k_category_stat_object[] = "category_stat_object";
 static const char __pyx_k_game_accounts_totals[] = "game_accounts_totals";
-static const char __pyx_k_Users_frank_gc_gc_game_account[] = "/Users/frank/gc/gc/game_account_summer/aggregator/game_account_aggregator.pyx";
+static const char __pyx_k_Users_frank_gc_gc_cython_extens[] = "/Users/frank/gc/gc/cython-extensions/game_account_aggregator/aggregator/game_account_aggregator.pyx";
 static const char __pyx_k_add_game_account_into_aggregate[] = "add_game_account_into_aggregate_dict";
 static const char __pyx_k_aggregator_game_account_aggregat[] = "aggregator.game_account_aggregator";
 static PyObject *__pyx_n_s_KeyError;
-static PyObject *__pyx_kp_s_Users_frank_gc_gc_game_account;
+static PyObject *__pyx_kp_s_Users_frank_gc_gc_cython_extens;
 static PyObject *__pyx_n_s_add_game_account_into_aggregate;
 static PyObject *__pyx_n_s_add_stat_into_dicts;
 static PyObject *__pyx_n_s_aggregator_game_account_aggregat;
@@ -2343,7 +2343,7 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_KeyError, __pyx_k_KeyError, sizeof(__pyx_k_KeyError), 0, 0, 1, 1},
-  {&__pyx_kp_s_Users_frank_gc_gc_game_account, __pyx_k_Users_frank_gc_gc_game_account, sizeof(__pyx_k_Users_frank_gc_gc_game_account), 0, 0, 1, 0},
+  {&__pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_k_Users_frank_gc_gc_cython_extens, sizeof(__pyx_k_Users_frank_gc_gc_cython_extens), 0, 0, 1, 0},
   {&__pyx_n_s_add_game_account_into_aggregate, __pyx_k_add_game_account_into_aggregate, sizeof(__pyx_k_add_game_account_into_aggregate), 0, 0, 1, 1},
   {&__pyx_n_s_add_stat_into_dicts, __pyx_k_add_stat_into_dicts, sizeof(__pyx_k_add_stat_into_dicts), 0, 0, 1, 1},
   {&__pyx_n_s_aggregator_game_account_aggregat, __pyx_k_aggregator_game_account_aggregat, sizeof(__pyx_k_aggregator_game_account_aggregat), 0, 0, 1, 1},
@@ -2399,7 +2399,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(9, __pyx_n_s_entity, __pyx_n_s_str_id, __pyx_n_s_category, __pyx_n_s_stat, __pyx_n_s_value, __pyx_n_s_all_labels, __pyx_n_s_game_accounts_totals, __pyx_n_s_label, __pyx_n_s_stats_object); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(7, 0, 9, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_game_account, __pyx_n_s_add_stat_into_dicts, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(7, 0, 9, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_add_stat_into_dicts, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 5, __pyx_L1_error)
 
   /* "aggregator/game_account_aggregator.pyx":39
  * # {team: [{category: [{'s':<stat> , 'v': <value>}], id: <id>}]} to:
@@ -2411,7 +2411,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__3 = PyTuple_Pack(13, __pyx_n_s_game_account, __pyx_n_s_labels, __pyx_n_s_categories, __pyx_n_s_id_white_list, __pyx_n_s_game_accounts_totals, __pyx_n_s_stats, __pyx_n_s_entity, __pyx_n_s_entity_stats, __pyx_n_s_stat_object, __pyx_n_s_str_id, __pyx_n_s_category, __pyx_n_s_category_stat_object, __pyx_n_s_stat_entry); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(5, 0, 13, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_game_account, __pyx_n_s_add_game_account_into_aggregate, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(5, 0, 13, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_add_game_account_into_aggregate, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
