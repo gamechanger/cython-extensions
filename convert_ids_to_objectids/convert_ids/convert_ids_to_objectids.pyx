@@ -21,26 +21,28 @@ def to_id(id):
         return int(id)
     return id
 
-def recursively_convert_ids(obj):
+# gcapi, which along with servertooth responses, also uses this function. It does 
+# not want to convert dates so we add the convert_dates option
+def recursively_convert_ids(obj, convert_dates=True):
     if isinstance(obj, list):
-        map(lambda item: recursively_convert_ids(item), obj)
+        map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
     if not isinstance(obj, dict):
         return
 
     for key, value in obj.iteritems():
         if isinstance(value, list) or isinstance(value, dict):
-            recursively_convert_ids(value)
+            recursively_convert_ids(value, convert_dates=convert_dates)
         else:
-            convert_ids_in_dict(obj)
+            convert_ids_in_dict(obj, convert_dates=convert_dates)
 
-def convert_ids_in_dict(obj):
+def convert_ids_in_dict(obj, convert_dates=True):
     enc = ComplexTypeEncoder()
     for key in obj:
         if key.endswith('_id') or key == '$id' or key == 'id':
             obj[key] = to_id(obj[key])
         if key.endswith('_ids'):
             obj[key] = map(to_id, obj[key])
-        if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+        if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
             obj[key] = enc._decode_datetime(obj[key])
     return obj
 

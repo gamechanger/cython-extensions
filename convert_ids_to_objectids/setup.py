@@ -2,7 +2,7 @@ from setuptools import setup, Extension
 
 setup(
     name='gc-convert-ids-to-objectids',
-    version='1.0.5',
+    version='1.0.6',
     author='Alex Etling',
     author_email='alex@gc.com',
     packages=['convert_ids'],

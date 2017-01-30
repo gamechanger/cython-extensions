@@ -628,6 +628,20 @@ static const char *__pyx_f[] = {
 };
 
 /*--- Type declarations ---*/
+struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids;
+
+/* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
+ *     if isinstance(obj, list):
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
+ */
+struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids {
+  PyObject_HEAD
+  PyObject *__pyx_v_convert_dates;
+};
+
 
 /* --- Runtime support code (head) --- */
 /* Refnanny.proto */
@@ -791,6 +805,21 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func);
 #define __Pyx_PyObject_CallNoArg(func) __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL)
 #endif
 
+/* RaiseDoubleKeywords.proto */
+static void __Pyx_RaiseDoubleKeywordsError(const char* func_name, PyObject* kw_name);
+
+/* ParseKeywords.proto */
+static int __Pyx_ParseOptionalKeywords(PyObject *kwds, PyObject **argnames[],\
+    PyObject *kwds2, PyObject *values[], Py_ssize_t num_pos_args,\
+    const char* function_name);
+
+/* RaiseArgTupleInvalid.proto */
+static void __Pyx_RaiseArgtupleInvalid(const char* func_name, int exact,
+    Py_ssize_t num_min, Py_ssize_t num_max, Py_ssize_t num_found);
+
+/* None.proto */
+static CYTHON_INLINE void __Pyx_RaiseClosureNameError(const char *varname);
+
 /* FetchCommonType.proto */
 static PyTypeObject* __Pyx_FetchCommonType(PyTypeObject* type);
 
@@ -895,18 +924,6 @@ static CYTHON_INLINE int __Pyx_PyUnicode_Equals(PyObject* s1, PyObject* s2, int 
 #define __Pyx_PyString_Equals __Pyx_PyBytes_Equals
 #endif
 
-/* RaiseArgTupleInvalid.proto */
-static void __Pyx_RaiseArgtupleInvalid(const char* func_name, int exact,
-    Py_ssize_t num_min, Py_ssize_t num_max, Py_ssize_t num_found);
-
-/* RaiseDoubleKeywords.proto */
-static void __Pyx_RaiseDoubleKeywordsError(const char* func_name, PyObject* kw_name);
-
-/* ParseKeywords.proto */
-static int __Pyx_ParseOptionalKeywords(PyObject *kwds, PyObject **argnames[],\
-    PyObject *kwds2, PyObject *values[], Py_ssize_t num_pos_args,\
-    const char* function_name);
-
 /* Import.proto */
 static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level);
 
@@ -958,6 +975,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
 /* Module declarations from 'convert_ids.convert_ids_to_objectids' */
+static PyTypeObject *__pyx_ptype_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids = 0;
 #define __Pyx_MODULE_NAME "convert_ids.convert_ids_to_objectids"
 int __pyx_module_is_main_convert_ids__convert_ids_to_objectids = 0;
 
@@ -1016,6 +1034,7 @@ static const char __pyx_k_JSONEncoder[] = "JSONEncoder";
 static const char __pyx_k_bson_errors[] = "bson.errors";
 static const char __pyx_k_in_datetime[] = "in_datetime";
 static const char __pyx_k_microsecond[] = "microsecond";
+static const char __pyx_k_convert_dates[] = "convert_dates";
 static const char __pyx_k_dateutil_parser[] = "dateutil.parser";
 static const char __pyx_k_decode_datetime[] = "_decode_datetime";
 static const char __pyx_k_encode_datetime[] = "_encode_datetime";
@@ -1042,6 +1061,7 @@ static PyObject *__pyx_kp_s_Users_frank_gc_gc_cython_extens;
 static PyObject *__pyx_n_s_bson;
 static PyObject *__pyx_n_s_bson_errors;
 static PyObject *__pyx_n_s_collection;
+static PyObject *__pyx_n_s_convert_dates;
 static PyObject *__pyx_n_s_convert_ids_convert_ids_to_objec;
 static PyObject *__pyx_n_s_convert_ids_in_dict;
 static PyObject *__pyx_n_s_date;
@@ -1096,12 +1116,13 @@ static PyObject *__pyx_n_s_value;
 static PyObject *__pyx_n_s_when;
 static PyObject *__pyx_n_s_year;
 static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_to_id(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_item); /* proto */
-static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj); /* proto */
-static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj); /* proto */
+static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__pyx_v_item); /* proto */
+static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj, PyObject *__pyx_v_convert_dates); /* proto */
+static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj, PyObject *__pyx_v_convert_dates); /* proto */
 static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder__encode_datetime(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_in_datetime); /* proto */
 static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_2_decode_datetime(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_in_string); /* proto */
 static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_4default(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_obj); /* proto */
+static PyObject *__pyx_tp_new_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
@@ -1432,7 +1453,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_to_id(CYTHON_
  *         return int(id)
  *     return id             # <<<<<<<<<<<<<<
  * 
- * def recursively_convert_ids(obj):
+ * # gcapi, which along with servertooth responses, also uses this function. It does
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_id);
@@ -1461,32 +1482,80 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_to_id(CYTHON_
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":24
- *     return id
- * 
- * def recursively_convert_ids(obj):             # <<<<<<<<<<<<<<
+/* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids(PyObject *__pyx_self, PyObject *__pyx_v_obj); /*proto*/
-static PyMethodDef __pyx_mdef_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids = {"recursively_convert_ids", (PyCFunction)__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids, METH_O, 0};
-static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids(PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids = {"recursively_convert_ids", (PyCFunction)__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  PyObject *__pyx_v_obj = 0;
+  PyObject *__pyx_v_convert_dates = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("recursively_convert_ids (wrapper)", 0);
-  __pyx_r = __pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(__pyx_self, ((PyObject *)__pyx_v_obj));
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_obj,&__pyx_n_s_convert_dates,0};
+    PyObject* values[2] = {0,0};
+    values[1] = ((PyObject *)Py_True);
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_obj)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        case  1:
+        if (kw_args > 0) {
+          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_convert_dates);
+          if (value) { values[1] = value; kw_args--; }
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "recursively_convert_ids") < 0)) __PYX_ERR(0, 26, __pyx_L3_error)
+      }
+    } else {
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+    }
+    __pyx_v_obj = values[0];
+    __pyx_v_convert_dates = values[1];
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("recursively_convert_ids", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 26, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.recursively_convert_ids", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(__pyx_self, __pyx_v_obj, __pyx_v_convert_dates);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":26
- * def recursively_convert_ids(obj):
+/* "convert_ids/convert_ids_to_objectids.pyx":28
+ * def recursively_convert_ids(obj, convert_dates=True):
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)             # <<<<<<<<<<<<<<
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)             # <<<<<<<<<<<<<<
  *     if not isinstance(obj, dict):
  *         return
  */
@@ -1505,7 +1574,9 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_23recursively
   return __pyx_r;
 }
 
-static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_item) {
+static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__pyx_v_item) {
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *__pyx_cur_scope;
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1513,54 +1584,27 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   PyObject *__pyx_t_3 = NULL;
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("lambda", 0);
+  __pyx_outer_scope = (struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_recursively_convert_ids); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_recursively_convert_ids); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = NULL;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_3)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_3);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-    }
-  }
-  if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_item); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-  } else {
-    #if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(__pyx_t_2)) {
-      PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_item};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
-    } else
-    #endif
-    #if CYTHON_FAST_PYCCALL
-    if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-      PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_item};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
-    } else
-    #endif
-    {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_4);
-      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
-      __Pyx_INCREF(__pyx_v_item);
-      __Pyx_GIVEREF(__pyx_v_item);
-      PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_item);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    }
-  }
+  __Pyx_INCREF(__pyx_v_item);
+  __Pyx_GIVEREF(__pyx_v_item);
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_item);
+  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  if (unlikely(!__pyx_cur_scope->__pyx_v_convert_dates)) { __Pyx_RaiseClosureNameError("convert_dates"); __PYX_ERR(0, 28, __pyx_L1_error) }
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_convert_dates, __pyx_cur_scope->__pyx_v_convert_dates) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_r = __pyx_t_4;
+  __pyx_t_4 = 0;
   goto __pyx_L0;
 
   /* function exit code */
@@ -1577,15 +1621,16 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":24
- *     return id
- * 
- * def recursively_convert_ids(obj):             # <<<<<<<<<<<<<<
+/* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  */
 
-static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_convert_ids(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj, PyObject *__pyx_v_convert_dates) {
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *__pyx_cur_scope;
   CYTHON_UNUSED PyObject *__pyx_v_key = NULL;
   PyObject *__pyx_v_value = NULL;
   PyObject *__pyx_r = NULL;
@@ -1603,28 +1648,39 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
   PyObject *__pyx_t_11 = NULL;
   PyObject *__pyx_t_12 = NULL;
   __Pyx_RefNannySetupContext("recursively_convert_ids", 0);
+  __pyx_cur_scope = (struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)__pyx_tp_new_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(__pyx_ptype_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids, __pyx_empty_tuple, NULL);
+  if (unlikely(!__pyx_cur_scope)) {
+    __pyx_cur_scope = ((struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)Py_None);
+    __Pyx_INCREF(Py_None);
+    __PYX_ERR(0, 26, __pyx_L1_error)
+  } else {
+    __Pyx_GOTREF(__pyx_cur_scope);
+  }
+  __pyx_cur_scope->__pyx_v_convert_dates = __pyx_v_convert_dates;
+  __Pyx_INCREF(__pyx_cur_scope->__pyx_v_convert_dates);
+  __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_convert_dates);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":25
- * 
- * def recursively_convert_ids(obj):
+  /* "convert_ids/convert_ids_to_objectids.pyx":27
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):
  *     if isinstance(obj, list):             # <<<<<<<<<<<<<<
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  *     if not isinstance(obj, dict):
  */
   __pyx_t_1 = PyList_Check(__pyx_v_obj); 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":26
- * def recursively_convert_ids(obj):
+    /* "convert_ids/convert_ids_to_objectids.pyx":28
+ * def recursively_convert_ids(obj, convert_dates=True):
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)             # <<<<<<<<<<<<<<
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)             # <<<<<<<<<<<<<<
  *     if not isinstance(obj, dict):
  *         return
  */
-    __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_23recursively_convert_ids_lambda, 0, __pyx_n_s_recursively_convert_ids_locals_l, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_23recursively_convert_ids_lambda, 0, __pyx_n_s_recursively_convert_ids_locals_l, ((PyObject*)__pyx_cur_scope), __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 28, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
@@ -1632,23 +1688,23 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
     __Pyx_GIVEREF(__pyx_v_obj);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_obj);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 28, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":25
- * 
- * def recursively_convert_ids(obj):
+    /* "convert_ids/convert_ids_to_objectids.pyx":27
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):
  *     if isinstance(obj, list):             # <<<<<<<<<<<<<<
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  *     if not isinstance(obj, dict):
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":27
+  /* "convert_ids/convert_ids_to_objectids.pyx":29
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  *     if not isinstance(obj, dict):             # <<<<<<<<<<<<<<
  *         return
  * 
@@ -1657,8 +1713,8 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
   __pyx_t_1 = ((!(__pyx_t_2 != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":28
- *         map(lambda item: recursively_convert_ids(item), obj)
+    /* "convert_ids/convert_ids_to_objectids.pyx":30
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  *     if not isinstance(obj, dict):
  *         return             # <<<<<<<<<<<<<<
  * 
@@ -1668,28 +1724,28 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":27
+    /* "convert_ids/convert_ids_to_objectids.pyx":29
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  *     if not isinstance(obj, dict):             # <<<<<<<<<<<<<<
  *         return
  * 
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":30
+  /* "convert_ids/convert_ids_to_objectids.pyx":32
  *         return
  * 
  *     for key, value in obj.iteritems():             # <<<<<<<<<<<<<<
  *         if isinstance(value, list) or isinstance(value, dict):
- *             recursively_convert_ids(value)
+ *             recursively_convert_ids(value, convert_dates=convert_dates)
  */
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_obj == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "iteritems");
-    __PYX_ERR(0, 30, __pyx_L1_error)
+    __PYX_ERR(0, 32, __pyx_L1_error)
   }
-  __pyx_t_4 = __Pyx_dict_iterator(__pyx_v_obj, 0, __pyx_n_s_iteritems, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_dict_iterator(__pyx_v_obj, 0, __pyx_n_s_iteritems, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_3);
   __pyx_t_3 = __pyx_t_4;
@@ -1697,7 +1753,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
   while (1) {
     __pyx_t_9 = __Pyx_dict_iter_next(__pyx_t_3, __pyx_t_6, &__pyx_t_5, &__pyx_t_4, &__pyx_t_8, NULL, __pyx_t_7);
     if (unlikely(__pyx_t_9 == 0)) break;
-    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 30, __pyx_L1_error)
+    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 32, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_XDECREF_SET(__pyx_v_key, __pyx_t_4);
@@ -1705,11 +1761,11 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
     __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_8);
     __pyx_t_8 = 0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":31
+    /* "convert_ids/convert_ids_to_objectids.pyx":33
  * 
  *     for key, value in obj.iteritems():
  *         if isinstance(value, list) or isinstance(value, dict):             # <<<<<<<<<<<<<<
- *             recursively_convert_ids(value)
+ *             recursively_convert_ids(value, convert_dates=convert_dates)
  *         else:
  */
     __pyx_t_2 = PyList_Check(__pyx_v_value); 
@@ -1725,122 +1781,62 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
     __pyx_L8_bool_binop_done:;
     if (__pyx_t_1) {
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":32
+      /* "convert_ids/convert_ids_to_objectids.pyx":34
  *     for key, value in obj.iteritems():
  *         if isinstance(value, list) or isinstance(value, dict):
- *             recursively_convert_ids(value)             # <<<<<<<<<<<<<<
+ *             recursively_convert_ids(value, convert_dates=convert_dates)             # <<<<<<<<<<<<<<
  *         else:
- *             convert_ids_in_dict(obj)
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)
  */
-      __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_recursively_convert_ids); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_GetModuleGlobalName(__pyx_n_s_recursively_convert_ids); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_11 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
-        __pyx_t_11 = PyMethod_GET_SELF(__pyx_t_4);
-        if (likely(__pyx_t_11)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-          __Pyx_INCREF(__pyx_t_11);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_4, function);
-        }
-      }
-      if (!__pyx_t_11) {
-        __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_value); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_8);
-      } else {
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_11, __pyx_v_value};
-          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_11, __pyx_v_value};
-          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-        } else
-        #endif
-        {
-          __pyx_t_12 = PyTuple_New(1+1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 32, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_12);
-          __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11); __pyx_t_11 = NULL;
-          __Pyx_INCREF(__pyx_v_value);
-          __Pyx_GIVEREF(__pyx_v_value);
-          PyTuple_SET_ITEM(__pyx_t_12, 0+1, __pyx_v_value);
-          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_12, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_8);
-          __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-        }
-      }
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_INCREF(__pyx_v_value);
+      __Pyx_GIVEREF(__pyx_v_value);
+      PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_value);
+      __pyx_t_11 = PyDict_New(); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 34, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_11);
+      if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_convert_dates, __pyx_cur_scope->__pyx_v_convert_dates) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_4, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 34, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":31
+      /* "convert_ids/convert_ids_to_objectids.pyx":33
  * 
  *     for key, value in obj.iteritems():
  *         if isinstance(value, list) or isinstance(value, dict):             # <<<<<<<<<<<<<<
- *             recursively_convert_ids(value)
+ *             recursively_convert_ids(value, convert_dates=convert_dates)
  *         else:
  */
       goto __pyx_L7;
     }
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":34
- *             recursively_convert_ids(value)
+    /* "convert_ids/convert_ids_to_objectids.pyx":36
+ *             recursively_convert_ids(value, convert_dates=convert_dates)
  *         else:
- *             convert_ids_in_dict(obj)             # <<<<<<<<<<<<<<
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)             # <<<<<<<<<<<<<<
  * 
- * def convert_ids_in_dict(obj):
+ * def convert_ids_in_dict(obj, convert_dates=True):
  */
     /*else*/ {
-      __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_convert_ids_in_dict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_GetModuleGlobalName(__pyx_n_s_convert_ids_in_dict); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 36, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __pyx_t_11 = PyTuple_New(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 36, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_11);
+      __Pyx_INCREF(__pyx_v_obj);
+      __Pyx_GIVEREF(__pyx_v_obj);
+      PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_v_obj);
+      __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_12 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
-        __pyx_t_12 = PyMethod_GET_SELF(__pyx_t_4);
-        if (likely(__pyx_t_12)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-          __Pyx_INCREF(__pyx_t_12);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_4, function);
-        }
-      }
-      if (!__pyx_t_12) {
-        __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_obj); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_8);
-      } else {
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_v_obj};
-          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_v_obj};
-          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-        } else
-        #endif
-        {
-          __pyx_t_11 = PyTuple_New(1+1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 34, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_11);
-          __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_12); __pyx_t_12 = NULL;
-          __Pyx_INCREF(__pyx_v_obj);
-          __Pyx_GIVEREF(__pyx_v_obj);
-          PyTuple_SET_ITEM(__pyx_t_11, 0+1, __pyx_v_obj);
-          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_11, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_8);
-          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        }
-      }
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_convert_dates, __pyx_cur_scope->__pyx_v_convert_dates) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_11, __pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 36, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -1848,12 +1844,12 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":24
- *     return id
- * 
- * def recursively_convert_ids(obj):             # <<<<<<<<<<<<<<
+  /* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  */
 
   /* function exit code */
@@ -1870,34 +1866,83 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_2recursively_
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_key);
   __Pyx_XDECREF(__pyx_v_value);
+  __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":36
- *             convert_ids_in_dict(obj)
+/* "convert_ids/convert_ids_to_objectids.pyx":38
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)
  * 
- * def convert_ids_in_dict(obj):             # <<<<<<<<<<<<<<
+ * def convert_ids_in_dict(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict(PyObject *__pyx_self, PyObject *__pyx_v_obj); /*proto*/
-static PyMethodDef __pyx_mdef_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict = {"convert_ids_in_dict", (PyCFunction)__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict, METH_O, 0};
-static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict(PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict = {"convert_ids_in_dict", (PyCFunction)__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  PyObject *__pyx_v_obj = 0;
+  PyObject *__pyx_v_convert_dates = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("convert_ids_in_dict (wrapper)", 0);
-  __pyx_r = __pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(__pyx_self, ((PyObject *)__pyx_v_obj));
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_obj,&__pyx_n_s_convert_dates,0};
+    PyObject* values[2] = {0,0};
+    values[1] = ((PyObject *)Py_True);
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_obj)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        case  1:
+        if (kw_args > 0) {
+          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_convert_dates);
+          if (value) { values[1] = value; kw_args--; }
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "convert_ids_in_dict") < 0)) __PYX_ERR(0, 38, __pyx_L3_error)
+      }
+    } else {
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+    }
+    __pyx_v_obj = values[0];
+    __pyx_v_convert_dates = values[1];
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("convert_ids_in_dict", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 38, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.convert_ids_in_dict", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(__pyx_self, __pyx_v_obj, __pyx_v_convert_dates);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_in_dict(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj, PyObject *__pyx_v_convert_dates) {
   PyObject *__pyx_v_enc = NULL;
   PyObject *__pyx_v_key = NULL;
   PyObject *__pyx_r = NULL;
@@ -1915,14 +1960,14 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
   int __pyx_t_11;
   __Pyx_RefNannySetupContext("convert_ids_in_dict", 0);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":37
+  /* "convert_ids/convert_ids_to_objectids.pyx":39
  * 
- * def convert_ids_in_dict(obj):
+ * def convert_ids_in_dict(obj, convert_dates=True):
  *     enc = ComplexTypeEncoder()             # <<<<<<<<<<<<<<
  *     for key in obj:
  *         if key.endswith('_id') or key == '$id' or key == 'id':
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_ComplexTypeEncoder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_ComplexTypeEncoder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -1935,18 +1980,18 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_enc = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":38
- * def convert_ids_in_dict(obj):
+  /* "convert_ids/convert_ids_to_objectids.pyx":40
+ * def convert_ids_in_dict(obj, convert_dates=True):
  *     enc = ComplexTypeEncoder()
  *     for key in obj:             # <<<<<<<<<<<<<<
  *         if key.endswith('_id') or key == '$id' or key == 'id':
@@ -1956,26 +2001,26 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
     __pyx_t_1 = __pyx_v_obj; __Pyx_INCREF(__pyx_t_1); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_obj); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_obj); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_5)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -1985,7 +2030,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 38, __pyx_L1_error)
+          else __PYX_ERR(0, 40, __pyx_L1_error)
         }
         break;
       }
@@ -1994,46 +2039,46 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
     __Pyx_XDECREF_SET(__pyx_v_key, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":39
+    /* "convert_ids/convert_ids_to_objectids.pyx":41
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  *         if key.endswith('_id') or key == '$id' or key == 'id':             # <<<<<<<<<<<<<<
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (!__pyx_t_7) {
     } else {
       __pyx_t_6 = __pyx_t_7;
       goto __pyx_L6_bool_binop_done;
     }
-    __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_key, __pyx_kp_s_id_2, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_key, __pyx_kp_s_id_2, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
     if (!__pyx_t_7) {
     } else {
       __pyx_t_6 = __pyx_t_7;
       goto __pyx_L6_bool_binop_done;
     }
-    __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_key, __pyx_n_s_id_3, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_key, __pyx_n_s_id_3, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
     __pyx_t_6 = __pyx_t_7;
     __pyx_L6_bool_binop_done:;
     if (__pyx_t_6) {
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":40
+      /* "convert_ids/convert_ids_to_objectids.pyx":42
  *     for key in obj:
  *         if key.endswith('_id') or key == '$id' or key == 'id':
  *             obj[key] = to_id(obj[key])             # <<<<<<<<<<<<<<
  *         if key.endswith('_ids'):
  *             obj[key] = map(to_id, obj[key])
  */
-      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_8 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __pyx_t_9 = NULL;
       if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -2046,14 +2091,14 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
         }
       }
       if (!__pyx_t_9) {
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_3);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_2)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_8};
-          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -2062,29 +2107,29 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
           PyObject *__pyx_temp[2] = {__pyx_t_9, __pyx_t_8};
-          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         } else
         #endif
         {
-          __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_10 = PyTuple_New(1+1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 42, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_9); __pyx_t_9 = NULL;
           __Pyx_GIVEREF(__pyx_t_8);
           PyTuple_SET_ITEM(__pyx_t_10, 0+1, __pyx_t_8);
           __pyx_t_8 = 0;
-          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":39
+      /* "convert_ids/convert_ids_to_objectids.pyx":41
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  *         if key.endswith('_id') or key == '$id' or key == 'id':             # <<<<<<<<<<<<<<
@@ -2093,34 +2138,34 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
  */
     }
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":41
+    /* "convert_ids/convert_ids_to_objectids.pyx":43
  *         if key.endswith('_id') or key == '$id' or key == 'id':
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):             # <<<<<<<<<<<<<<
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_6) {
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":42
+      /* "convert_ids/convert_ids_to_objectids.pyx":44
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):
  *             obj[key] = map(to_id, obj[key])             # <<<<<<<<<<<<<<
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  *             obj[key] = enc._decode_datetime(obj[key])
  */
-      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_3 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_2);
@@ -2128,46 +2173,52 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
       PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_3);
       __pyx_t_2 = 0;
       __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":41
+      /* "convert_ids/convert_ids_to_objectids.pyx":43
  *         if key.endswith('_id') or key == '$id' or key == 'id':
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):             # <<<<<<<<<<<<<<
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  */
     }
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":43
+    /* "convert_ids/convert_ids_to_objectids.pyx":45
  *         if key.endswith('_ids'):
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):             # <<<<<<<<<<<<<<
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):             # <<<<<<<<<<<<<<
  *             obj[key] = enc._decode_datetime(obj[key])
  *     return obj
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_startswith); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_v_convert_dates); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
+    if (__pyx_t_7) {
+    } else {
+      __pyx_t_6 = __pyx_t_7;
+      goto __pyx_L11_bool_binop_done;
+    }
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_startswith); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     if (!__pyx_t_7) {
     } else {
       __pyx_t_6 = __pyx_t_7;
       goto __pyx_L11_bool_binop_done;
     }
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_endswith); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (!__pyx_t_7) {
     } else {
@@ -2176,37 +2227,37 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_3 = __pyx_v_key;
-    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_first_save, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_first_save, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
     if (!__pyx_t_11) {
     } else {
       __pyx_t_7 = __pyx_t_11;
-      goto __pyx_L14_bool_binop_done;
+      goto __pyx_L15_bool_binop_done;
     }
-    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_when, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_when, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
     if (!__pyx_t_11) {
     } else {
       __pyx_t_7 = __pyx_t_11;
-      goto __pyx_L14_bool_binop_done;
+      goto __pyx_L15_bool_binop_done;
     }
-    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_utc_start, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_utc_start, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
     __pyx_t_7 = __pyx_t_11;
-    __pyx_L14_bool_binop_done:;
+    __pyx_L15_bool_binop_done:;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_11 = (__pyx_t_7 != 0);
     __pyx_t_6 = __pyx_t_11;
     __pyx_L11_bool_binop_done:;
     if (__pyx_t_6) {
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":44
+      /* "convert_ids/convert_ids_to_objectids.pyx":46
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  *             obj[key] = enc._decode_datetime(obj[key])             # <<<<<<<<<<<<<<
  *     return obj
  * 
  */
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_enc, __pyx_n_s_decode_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_enc, __pyx_n_s_decode_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_2 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_2 = PyObject_GetItem(__pyx_v_obj, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_8 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -2219,14 +2270,14 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
         }
       }
       if (!__pyx_t_8) {
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_GOTREF(__pyx_t_3);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_2};
-          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2235,39 +2286,39 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
           PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_2};
-          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         } else
         #endif
         {
-          __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_8); __pyx_t_8 = NULL;
           __Pyx_GIVEREF(__pyx_t_2);
           PyTuple_SET_ITEM(__pyx_t_9, 0+1, __pyx_t_2);
           __pyx_t_2 = 0;
-          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_obj, __pyx_v_key, __pyx_t_3) < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":43
+      /* "convert_ids/convert_ids_to_objectids.pyx":45
  *         if key.endswith('_ids'):
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):             # <<<<<<<<<<<<<<
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):             # <<<<<<<<<<<<<<
  *             obj[key] = enc._decode_datetime(obj[key])
  *     return obj
  */
     }
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":38
- * def convert_ids_in_dict(obj):
+    /* "convert_ids/convert_ids_to_objectids.pyx":40
+ * def convert_ids_in_dict(obj, convert_dates=True):
  *     enc = ComplexTypeEncoder()
  *     for key in obj:             # <<<<<<<<<<<<<<
  *         if key.endswith('_id') or key == '$id' or key == 'id':
@@ -2276,8 +2327,8 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":45
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+  /* "convert_ids/convert_ids_to_objectids.pyx":47
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  *             obj[key] = enc._decode_datetime(obj[key])
  *     return obj             # <<<<<<<<<<<<<<
  * 
@@ -2288,10 +2339,10 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
   __pyx_r = __pyx_v_obj;
   goto __pyx_L0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":36
- *             convert_ids_in_dict(obj)
+  /* "convert_ids/convert_ids_to_objectids.pyx":38
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)
  * 
- * def convert_ids_in_dict(obj):             # <<<<<<<<<<<<<<
+ * def convert_ids_in_dict(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  */
@@ -2314,7 +2365,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_4convert_ids_
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":51
+/* "convert_ids/convert_ids_to_objectids.pyx":53
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  *     """
  *     def _encode_datetime(self, in_datetime):             # <<<<<<<<<<<<<<
@@ -2352,11 +2403,11 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_in_datetime)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_encode_datetime", 1, 2, 2, 1); __PYX_ERR(0, 51, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("_encode_datetime", 1, 2, 2, 1); __PYX_ERR(0, 53, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_encode_datetime") < 0)) __PYX_ERR(0, 51, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_encode_datetime") < 0)) __PYX_ERR(0, 53, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2369,7 +2420,7 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("_encode_datetime", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 51, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("_encode_datetime", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 53, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.ComplexTypeEncoder._encode_datetime", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2391,7 +2442,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("_encode_datetime", 0);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":59
+  /* "convert_ids/convert_ids_to_objectids.pyx":61
  *                                 1997-07-16T19:20:30.45+01:00
  *         """
  *         return in_datetime.replace(microsecond=0).isoformat()             # <<<<<<<<<<<<<<
@@ -2399,16 +2450,16 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_in_datetime, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_in_datetime, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_microsecond, __pyx_int_0) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_microsecond, __pyx_int_0) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_isoformat); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_isoformat); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -2422,10 +2473,10 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     }
   }
   if (__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2433,7 +2484,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":51
+  /* "convert_ids/convert_ids_to_objectids.pyx":53
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  *     """
  *     def _encode_datetime(self, in_datetime):             # <<<<<<<<<<<<<<
@@ -2455,7 +2506,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":62
+/* "convert_ids/convert_ids_to_objectids.pyx":64
  * 
  * 
  *     def _decode_datetime(self, in_string):             # <<<<<<<<<<<<<<
@@ -2493,11 +2544,11 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_in_string)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_decode_datetime", 1, 2, 2, 1); __PYX_ERR(0, 62, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("_decode_datetime", 1, 2, 2, 1); __PYX_ERR(0, 64, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_decode_datetime") < 0)) __PYX_ERR(0, 62, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_decode_datetime") < 0)) __PYX_ERR(0, 64, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2510,7 +2561,7 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("_decode_datetime", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 62, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("_decode_datetime", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 64, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.ComplexTypeEncoder._decode_datetime", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2542,7 +2593,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   PyObject *__pyx_t_14 = NULL;
   __Pyx_RefNannySetupContext("_decode_datetime", 0);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":70
+  /* "convert_ids/convert_ids_to_objectids.pyx":72
  *         @return:            A datetime if in_string represents a valid datetime, else in_string
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -2558,7 +2609,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":71
+      /* "convert_ids/convert_ids_to_objectids.pyx":73
  *         """
  *         try:
  *             return dateutil.parser.parse(in_string)             # <<<<<<<<<<<<<<
@@ -2566,12 +2617,12 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  *             try:
  */
       __Pyx_XDECREF(__pyx_r);
-      __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_dateutil); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L3_error)
+      __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_dateutil); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_parser); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 71, __pyx_L3_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_parser); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 73, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_parse); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L3_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_parse); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_6 = NULL;
@@ -2585,13 +2636,13 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
         }
       }
       if (!__pyx_t_6) {
-        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_in_string); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L3_error)
+        __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_in_string); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_4);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_in_string};
-          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L3_error)
+          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L3_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
@@ -2599,19 +2650,19 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_v_in_string};
-          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L3_error)
+          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L3_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
         #endif
         {
-          __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 71, __pyx_L3_error)
+          __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 73, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
           __Pyx_INCREF(__pyx_v_in_string);
           __Pyx_GIVEREF(__pyx_v_in_string);
           PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_v_in_string);
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L3_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         }
@@ -2621,7 +2672,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       __pyx_t_4 = 0;
       goto __pyx_L7_try_return;
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":70
+      /* "convert_ids/convert_ids_to_objectids.pyx":72
  *         @return:            A datetime if in_string represents a valid datetime, else in_string
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -2636,7 +2687,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":72
+    /* "convert_ids/convert_ids_to_objectids.pyx":74
  *         try:
  *             return dateutil.parser.parse(in_string)
  *         except:             # <<<<<<<<<<<<<<
@@ -2645,12 +2696,12 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
     /*except:*/ {
       __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.ComplexTypeEncoder._decode_datetime", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_5, &__pyx_t_7) < 0) __PYX_ERR(0, 72, __pyx_L5_except_error)
+      if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_5, &__pyx_t_7) < 0) __PYX_ERR(0, 74, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "convert_ids/convert_ids_to_objectids.pyx":73
+      /* "convert_ids/convert_ids_to_objectids.pyx":75
  *             return dateutil.parser.parse(in_string)
  *         except:
  *             try:             # <<<<<<<<<<<<<<
@@ -2666,7 +2717,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
         __Pyx_XGOTREF(__pyx_t_10);
         /*try:*/ {
 
-          /* "convert_ids/convert_ids_to_objectids.pyx":74
+          /* "convert_ids/convert_ids_to_objectids.pyx":76
  *         except:
  *             try:
  *                 return datetime.strptime(in_string, '%m/%d/%y')             # <<<<<<<<<<<<<<
@@ -2674,9 +2725,9 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  *                 return in_string
  */
           __Pyx_XDECREF(__pyx_r);
-          __pyx_t_11 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 74, __pyx_L13_error)
+          __pyx_t_11 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 76, __pyx_L13_error)
           __Pyx_GOTREF(__pyx_t_11);
-          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_strptime); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 74, __pyx_L13_error)
+          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_strptime); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 76, __pyx_L13_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_11 = NULL;
@@ -2694,7 +2745,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
           #if CYTHON_FAST_PYCALL
           if (PyFunction_Check(__pyx_t_12)) {
             PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_in_string, __pyx_kp_s_m_d_y};
-            __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 74, __pyx_L13_error)
+            __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L13_error)
             __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
             __Pyx_GOTREF(__pyx_t_6);
           } else
@@ -2702,13 +2753,13 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
           #if CYTHON_FAST_PYCCALL
           if (__Pyx_PyFastCFunction_Check(__pyx_t_12)) {
             PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_in_string, __pyx_kp_s_m_d_y};
-            __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 74, __pyx_L13_error)
+            __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_12, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L13_error)
             __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
             __Pyx_GOTREF(__pyx_t_6);
           } else
           #endif
           {
-            __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 74, __pyx_L13_error)
+            __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 76, __pyx_L13_error)
             __Pyx_GOTREF(__pyx_t_14);
             if (__pyx_t_11) {
               __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -2719,7 +2770,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
             __Pyx_INCREF(__pyx_kp_s_m_d_y);
             __Pyx_GIVEREF(__pyx_kp_s_m_d_y);
             PyTuple_SET_ITEM(__pyx_t_14, 1+__pyx_t_13, __pyx_kp_s_m_d_y);
-            __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_14, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 74, __pyx_L13_error)
+            __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_14, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L13_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
           }
@@ -2731,7 +2782,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           goto __pyx_L17_try_return;
 
-          /* "convert_ids/convert_ids_to_objectids.pyx":73
+          /* "convert_ids/convert_ids_to_objectids.pyx":75
  *             return dateutil.parser.parse(in_string)
  *         except:
  *             try:             # <<<<<<<<<<<<<<
@@ -2746,7 +2797,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
         __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-        /* "convert_ids/convert_ids_to_objectids.pyx":75
+        /* "convert_ids/convert_ids_to_objectids.pyx":77
  *             try:
  *                 return datetime.strptime(in_string, '%m/%d/%y')
  *             except:             # <<<<<<<<<<<<<<
@@ -2755,12 +2806,12 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
         /*except:*/ {
           __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.ComplexTypeEncoder._decode_datetime", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_12, &__pyx_t_14) < 0) __PYX_ERR(0, 75, __pyx_L15_except_error)
+          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_12, &__pyx_t_14) < 0) __PYX_ERR(0, 77, __pyx_L15_except_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_GOTREF(__pyx_t_14);
 
-          /* "convert_ids/convert_ids_to_objectids.pyx":76
+          /* "convert_ids/convert_ids_to_objectids.pyx":78
  *                 return datetime.strptime(in_string, '%m/%d/%y')
  *             except:
  *                 return in_string             # <<<<<<<<<<<<<<
@@ -2780,7 +2831,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
         }
         __pyx_L15_except_error:;
 
-        /* "convert_ids/convert_ids_to_objectids.pyx":73
+        /* "convert_ids/convert_ids_to_objectids.pyx":75
  *             return dateutil.parser.parse(in_string)
  *         except:
  *             try:             # <<<<<<<<<<<<<<
@@ -2811,7 +2862,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     }
     __pyx_L5_except_error:;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":70
+    /* "convert_ids/convert_ids_to_objectids.pyx":72
  *         @return:            A datetime if in_string represents a valid datetime, else in_string
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -2840,7 +2891,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     goto __pyx_L0;
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":62
+  /* "convert_ids/convert_ids_to_objectids.pyx":64
  * 
  * 
  *     def _decode_datetime(self, in_string):             # <<<<<<<<<<<<<<
@@ -2865,7 +2916,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   return __pyx_r;
 }
 
-/* "convert_ids/convert_ids_to_objectids.pyx":79
+/* "convert_ids/convert_ids_to_objectids.pyx":81
  * 
  *     # pylint: disable=E0202
  *     def default(self, obj):             # <<<<<<<<<<<<<<
@@ -2902,11 +2953,11 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_obj)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("default", 1, 2, 2, 1); __PYX_ERR(0, 79, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("default", 1, 2, 2, 1); __PYX_ERR(0, 81, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "default") < 0)) __PYX_ERR(0, 79, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "default") < 0)) __PYX_ERR(0, 81, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2919,7 +2970,7 @@ static PyObject *__pyx_pw_11convert_ids_24convert_ids_to_objectids_18ComplexType
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("default", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 79, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("default", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 81, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("convert_ids.convert_ids_to_objectids.ComplexTypeEncoder.default", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2949,21 +3000,21 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   PyObject *__pyx_t_12 = NULL;
   __Pyx_RefNannySetupContext("default", 0);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":80
+  /* "convert_ids/convert_ids_to_objectids.pyx":82
  *     # pylint: disable=E0202
  *     def default(self, obj):
  *         if isinstance(obj, ObjectId):             # <<<<<<<<<<<<<<
  *             return str(obj)
  *         if isinstance(obj, datetime):
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_ObjectId); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_ObjectId); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_1); if (unlikely(__pyx_t_2 == -1)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_1); if (unlikely(__pyx_t_2 == -1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":81
+    /* "convert_ids/convert_ids_to_objectids.pyx":83
  *     def default(self, obj):
  *         if isinstance(obj, ObjectId):
  *             return str(obj)             # <<<<<<<<<<<<<<
@@ -2971,19 +3022,19 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  *             return self._encode_datetime(obj)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_v_obj);
     __Pyx_GIVEREF(__pyx_v_obj);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_obj);
-    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&PyString_Type)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&PyString_Type)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_4;
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":80
+    /* "convert_ids/convert_ids_to_objectids.pyx":82
  *     # pylint: disable=E0202
  *     def default(self, obj):
  *         if isinstance(obj, ObjectId):             # <<<<<<<<<<<<<<
@@ -2992,21 +3043,21 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":82
+  /* "convert_ids/convert_ids_to_objectids.pyx":84
  *         if isinstance(obj, ObjectId):
  *             return str(obj)
  *         if isinstance(obj, datetime):             # <<<<<<<<<<<<<<
  *             return self._encode_datetime(obj)
  *         if isinstance(obj, date):
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_3 == -1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_3 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_3 == -1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":83
+    /* "convert_ids/convert_ids_to_objectids.pyx":85
  *             return str(obj)
  *         if isinstance(obj, datetime):
  *             return self._encode_datetime(obj)             # <<<<<<<<<<<<<<
@@ -3014,7 +3065,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_encode_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_encode_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3027,13 +3078,13 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       }
     }
     if (!__pyx_t_5) {
-      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_obj); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_obj); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_obj};
-        __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_4);
       } else
@@ -3041,19 +3092,19 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_obj};
-        __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_4);
       } else
       #endif
       {
-        __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
         __Pyx_INCREF(__pyx_v_obj);
         __Pyx_GIVEREF(__pyx_v_obj);
         PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_v_obj);
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_6, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_6, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
@@ -3063,7 +3114,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":82
+    /* "convert_ids/convert_ids_to_objectids.pyx":84
  *         if isinstance(obj, ObjectId):
  *             return str(obj)
  *         if isinstance(obj, datetime):             # <<<<<<<<<<<<<<
@@ -3072,21 +3123,21 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":84
+  /* "convert_ids/convert_ids_to_objectids.pyx":86
  *         if isinstance(obj, datetime):
  *             return self._encode_datetime(obj)
  *         if isinstance(obj, date):             # <<<<<<<<<<<<<<
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))
  *         if isinstance(obj, DBRef):
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_date_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_date_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_2 == -1)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_2 == -1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":85
+    /* "convert_ids/convert_ids_to_objectids.pyx":87
  *             return self._encode_datetime(obj)
  *         if isinstance(obj, date):
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))             # <<<<<<<<<<<<<<
@@ -3094,15 +3145,15 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  *             return {'$ref': obj.collection, '$id': obj.id}
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_encode_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_encode_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_year); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_year); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_month); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_month); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_day); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_day); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_t_10 = NULL;
     __pyx_t_11 = 0;
@@ -3119,7 +3170,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_t_7, __pyx_t_8, __pyx_t_9};
-      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -3130,7 +3181,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_t_7, __pyx_t_8, __pyx_t_9};
-      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -3139,7 +3190,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     } else
     #endif
     {
-      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 85, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 87, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_t_10) {
         __Pyx_GIVEREF(__pyx_t_10); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_10); __pyx_t_10 = NULL;
@@ -3153,7 +3204,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       __pyx_t_7 = 0;
       __pyx_t_8 = 0;
       __pyx_t_9 = 0;
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
@@ -3169,14 +3220,14 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       }
     }
     if (!__pyx_t_5) {
-      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_4);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-        __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -3185,20 +3236,20 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_6};
-        __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       } else
       #endif
       {
-        __pyx_t_12 = PyTuple_New(1+1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 85, __pyx_L1_error)
+        __pyx_t_12 = PyTuple_New(1+1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_5); __pyx_t_5 = NULL;
         __Pyx_GIVEREF(__pyx_t_6);
         PyTuple_SET_ITEM(__pyx_t_12, 0+1, __pyx_t_6);
         __pyx_t_6 = 0;
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       }
@@ -3208,7 +3259,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":84
+    /* "convert_ids/convert_ids_to_objectids.pyx":86
  *         if isinstance(obj, datetime):
  *             return self._encode_datetime(obj)
  *         if isinstance(obj, date):             # <<<<<<<<<<<<<<
@@ -3217,42 +3268,42 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":86
+  /* "convert_ids/convert_ids_to_objectids.pyx":88
  *         if isinstance(obj, date):
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))
  *         if isinstance(obj, DBRef):             # <<<<<<<<<<<<<<
  *             return {'$ref': obj.collection, '$id': obj.id}
  *         return simplejson.JSONEncoder.default(self, obj)
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_DBRef); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_DBRef); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_3 == -1)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_3 = PyObject_IsInstance(__pyx_v_obj, __pyx_t_4); if (unlikely(__pyx_t_3 == -1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":87
+    /* "convert_ids/convert_ids_to_objectids.pyx":89
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))
  *         if isinstance(obj, DBRef):
  *             return {'$ref': obj.collection, '$id': obj.id}             # <<<<<<<<<<<<<<
  *         return simplejson.JSONEncoder.default(self, obj)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_collection); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_collection); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_kp_s_ref, __pyx_t_1) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_kp_s_ref, __pyx_t_1) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_id_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_obj, __pyx_n_s_id_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_kp_s_id_2, __pyx_t_1) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_kp_s_id_2, __pyx_t_1) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_4;
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "convert_ids/convert_ids_to_objectids.pyx":86
+    /* "convert_ids/convert_ids_to_objectids.pyx":88
  *         if isinstance(obj, date):
  *             return self._encode_datetime(datetime(obj.year, obj.month, obj.day))
  *         if isinstance(obj, DBRef):             # <<<<<<<<<<<<<<
@@ -3261,18 +3312,18 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
  */
   }
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":88
+  /* "convert_ids/convert_ids_to_objectids.pyx":90
  *         if isinstance(obj, DBRef):
  *             return {'$ref': obj.collection, '$id': obj.id}
  *         return simplejson.JSONEncoder.default(self, obj)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_simplejson); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_simplejson); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_JSONEncoder); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_JSONEncoder); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_default); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_default); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __pyx_t_12 = NULL;
@@ -3290,7 +3341,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_v_self, __pyx_v_obj};
-    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_GOTREF(__pyx_t_4);
   } else
@@ -3298,13 +3349,13 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_v_self, __pyx_v_obj};
-    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_GOTREF(__pyx_t_4);
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_12) {
       __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_12); __pyx_t_12 = NULL;
@@ -3315,7 +3366,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
     __Pyx_INCREF(__pyx_v_obj);
     __Pyx_GIVEREF(__pyx_v_obj);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_11, __pyx_v_obj);
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_6, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_6, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
@@ -3324,7 +3375,7 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":79
+  /* "convert_ids/convert_ids_to_objectids.pyx":81
  * 
  *     # pylint: disable=E0202
  *     def default(self, obj):             # <<<<<<<<<<<<<<
@@ -3350,6 +3401,110 @@ static PyObject *__pyx_pf_11convert_ids_24convert_ids_to_objectids_18ComplexType
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
+
+static struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *__pyx_freelist_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids[8];
+static int __pyx_freecount_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids = 0;
+
+static PyObject *__pyx_tp_new_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  PyObject *o;
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids)))) {
+    o = (PyObject*)__pyx_freelist_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids[--__pyx_freecount_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids];
+    memset(o, 0, sizeof(struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids));
+    (void) PyObject_INIT(o, t);
+    PyObject_GC_Track(o);
+  } else {
+    o = (*t->tp_alloc)(t, 0);
+    if (unlikely(!o)) return 0;
+  }
+  return o;
+}
+
+static void __pyx_tp_dealloc_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(PyObject *o) {
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *p = (struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)o;
+  PyObject_GC_UnTrack(o);
+  Py_CLEAR(p->__pyx_v_convert_dates);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids)))) {
+    __pyx_freelist_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids[__pyx_freecount_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids++] = ((struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)o);
+  } else {
+    (*Py_TYPE(o)->tp_free)(o);
+  }
+}
+
+static int __pyx_tp_traverse_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(PyObject *o, visitproc v, void *a) {
+  int e;
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *p = (struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)o;
+  if (p->__pyx_v_convert_dates) {
+    e = (*v)(p->__pyx_v_convert_dates, a); if (e) return e;
+  }
+  return 0;
+}
+
+static int __pyx_tp_clear_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids(PyObject *o) {
+  PyObject* tmp;
+  struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *p = (struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids *)o;
+  tmp = ((PyObject*)p->__pyx_v_convert_dates);
+  p->__pyx_v_convert_dates = Py_None; Py_INCREF(Py_None);
+  Py_XDECREF(tmp);
+  return 0;
+}
+
+static PyTypeObject __pyx_type_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids = {
+  PyVarObject_HEAD_INIT(0, 0)
+  "convert_ids.convert_ids_to_objectids.__pyx_scope_struct__recursively_convert_ids", /*tp_name*/
+  sizeof(struct __pyx_obj_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids), /*tp_basicsize*/
+  0, /*tp_itemsize*/
+  __pyx_tp_dealloc_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids, /*tp_dealloc*/
+  0, /*tp_print*/
+  0, /*tp_getattr*/
+  0, /*tp_setattr*/
+  #if PY_MAJOR_VERSION < 3
+  0, /*tp_compare*/
+  #endif
+  #if PY_MAJOR_VERSION >= 3
+  0, /*tp_as_async*/
+  #endif
+  0, /*tp_repr*/
+  0, /*tp_as_number*/
+  0, /*tp_as_sequence*/
+  0, /*tp_as_mapping*/
+  0, /*tp_hash*/
+  0, /*tp_call*/
+  0, /*tp_str*/
+  0, /*tp_getattro*/
+  0, /*tp_setattro*/
+  0, /*tp_as_buffer*/
+  Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
+  0, /*tp_doc*/
+  __pyx_tp_traverse_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids, /*tp_traverse*/
+  __pyx_tp_clear_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids, /*tp_clear*/
+  0, /*tp_richcompare*/
+  0, /*tp_weaklistoffset*/
+  0, /*tp_iter*/
+  0, /*tp_iternext*/
+  0, /*tp_methods*/
+  0, /*tp_members*/
+  0, /*tp_getset*/
+  0, /*tp_base*/
+  0, /*tp_dict*/
+  0, /*tp_descr_get*/
+  0, /*tp_descr_set*/
+  0, /*tp_dictoffset*/
+  0, /*tp_init*/
+  0, /*tp_alloc*/
+  __pyx_tp_new_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids, /*tp_new*/
+  0, /*tp_free*/
+  0, /*tp_is_gc*/
+  0, /*tp_bases*/
+  0, /*tp_mro*/
+  0, /*tp_cache*/
+  0, /*tp_subclasses*/
+  0, /*tp_weaklist*/
+  0, /*tp_del*/
+  0, /*tp_version_tag*/
+  #if PY_VERSION_HEX >= 0x030400a1
+  0, /*tp_finalize*/
+  #endif
+};
 
 static PyMethodDef __pyx_methods[] = {
   {0, 0, 0, 0}
@@ -3387,6 +3542,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_bson, __pyx_k_bson, sizeof(__pyx_k_bson), 0, 0, 1, 1},
   {&__pyx_n_s_bson_errors, __pyx_k_bson_errors, sizeof(__pyx_k_bson_errors), 0, 0, 1, 1},
   {&__pyx_n_s_collection, __pyx_k_collection, sizeof(__pyx_k_collection), 0, 0, 1, 1},
+  {&__pyx_n_s_convert_dates, __pyx_k_convert_dates, sizeof(__pyx_k_convert_dates), 0, 0, 1, 1},
   {&__pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_k_convert_ids_convert_ids_to_objec, sizeof(__pyx_k_convert_ids_convert_ids_to_objec), 0, 0, 1, 1},
   {&__pyx_n_s_convert_ids_in_dict, __pyx_k_convert_ids_in_dict, sizeof(__pyx_k_convert_ids_in_dict), 0, 0, 1, 1},
   {&__pyx_n_s_date, __pyx_k_date, sizeof(__pyx_k_date), 0, 0, 1, 1},
@@ -3443,7 +3599,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) __PYX_ERR(0, 28, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -3453,39 +3609,39 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":39
+  /* "convert_ids/convert_ids_to_objectids.pyx":41
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  *         if key.endswith('_id') or key == '$id' or key == 'id':             # <<<<<<<<<<<<<<
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_id); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_id); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":41
+  /* "convert_ids/convert_ids_to_objectids.pyx":43
  *         if key.endswith('_id') or key == '$id' or key == 'id':
  *             obj[key] = to_id(obj[key])
  *         if key.endswith('_ids'):             # <<<<<<<<<<<<<<
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_ids); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_ids); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":43
+  /* "convert_ids/convert_ids_to_objectids.pyx":45
  *         if key.endswith('_ids'):
  *             obj[key] = map(to_id, obj[key])
- *         if key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start'):             # <<<<<<<<<<<<<<
+ *         if convert_dates and (key.startswith('date_') or key.endswith('_date') or key in ('first_save', 'when', 'utc_start')):             # <<<<<<<<<<<<<<
  *             obj[key] = enc._decode_datetime(obj[key])
  *     return obj
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_date); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_date); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_n_s_date_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_n_s_date_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
@@ -3501,65 +3657,65 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_to_id, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 9, __pyx_L1_error)
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":24
- *     return id
- * 
- * def recursively_convert_ids(obj):             # <<<<<<<<<<<<<<
+  /* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  */
-  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_obj, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(4, __pyx_n_s_obj, __pyx_n_s_convert_dates, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_recursively_convert_ids, 24, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_recursively_convert_ids, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 26, __pyx_L1_error)
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":36
- *             convert_ids_in_dict(obj)
+  /* "convert_ids/convert_ids_to_objectids.pyx":38
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)
  * 
- * def convert_ids_in_dict(obj):             # <<<<<<<<<<<<<<
+ * def convert_ids_in_dict(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  */
-  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_n_s_obj, __pyx_n_s_enc, __pyx_n_s_key); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(4, __pyx_n_s_obj, __pyx_n_s_convert_dates, __pyx_n_s_enc, __pyx_n_s_key); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_convert_ids_in_dict, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_convert_ids_in_dict, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 38, __pyx_L1_error)
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":51
+  /* "convert_ids/convert_ids_to_objectids.pyx":53
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  *     """
  *     def _encode_datetime(self, in_datetime):             # <<<<<<<<<<<<<<
  *         """
  *         Converts a datetime into an ISO 8601 datetime string.
  */
-  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_in_datetime); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_in_datetime); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_encode_datetime, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_encode_datetime, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 53, __pyx_L1_error)
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":62
+  /* "convert_ids/convert_ids_to_objectids.pyx":64
  * 
  * 
  *     def _decode_datetime(self, in_string):             # <<<<<<<<<<<<<<
  *         """
  *         Tries to parse a string as an ISO 8601 datetime. If unsuccessful, returns the original string.
  */
-  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_in_string); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_in_string); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_decode_datetime, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_decode_datetime, 64, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 64, __pyx_L1_error)
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":79
+  /* "convert_ids/convert_ids_to_objectids.pyx":81
  * 
  *     # pylint: disable=E0202
  *     def default(self, obj):             # <<<<<<<<<<<<<<
  *         if isinstance(obj, ObjectId):
  *             return str(obj)
  */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_obj); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_obj); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_default, 79, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_frank_gc_gc_cython_extens, __pyx_n_s_default, 81, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -3662,6 +3818,9 @@ PyMODINIT_FUNC PyInit_convert_ids_to_objectids(void)
   /*--- Variable export code ---*/
   /*--- Function export code ---*/
   /*--- Type init code ---*/
+  if (PyType_Ready(&__pyx_type_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_type_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids.tp_print = 0;
+  __pyx_ptype_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids = &__pyx_type_11convert_ids_24convert_ids_to_objectids___pyx_scope_struct__recursively_convert_ids;
   /*--- Type import code ---*/
   /*--- Variable import code ---*/
   /*--- Function import code ---*/
@@ -3794,98 +3953,98 @@ PyMODINIT_FUNC PyInit_convert_ids_to_objectids(void)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_to_id, __pyx_t_1) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":24
- *     return id
- * 
- * def recursively_convert_ids(obj):             # <<<<<<<<<<<<<<
+  /* "convert_ids/convert_ids_to_objectids.pyx":26
+ * # gcapi, which along with servertooth responses, also uses this function. It does
+ * # not want to convert dates so we add the convert_dates option
+ * def recursively_convert_ids(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     if isinstance(obj, list):
- *         map(lambda item: recursively_convert_ids(item), obj)
+ *         map(lambda item: recursively_convert_ids(item, convert_dates=convert_dates), obj)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_3recursively_convert_ids, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_recursively_convert_ids, __pyx_t_1) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_recursively_convert_ids, __pyx_t_1) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":36
- *             convert_ids_in_dict(obj)
+  /* "convert_ids/convert_ids_to_objectids.pyx":38
+ *             convert_ids_in_dict(obj, convert_dates=convert_dates)
  * 
- * def convert_ids_in_dict(obj):             # <<<<<<<<<<<<<<
+ * def convert_ids_in_dict(obj, convert_dates=True):             # <<<<<<<<<<<<<<
  *     enc = ComplexTypeEncoder()
  *     for key in obj:
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_5convert_ids_in_dict, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_convert_ids_in_dict, __pyx_t_1) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_convert_ids_in_dict, __pyx_t_1) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":47
+  /* "convert_ids/convert_ids_to_objectids.pyx":49
  *     return obj
  * 
  * class ComplexTypeEncoder(simplejson.JSONEncoder):             # <<<<<<<<<<<<<<
  *     """
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_simplejson); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_simplejson); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_JSONEncoder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_JSONEncoder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_ComplexTypeEncoder, __pyx_n_s_ComplexTypeEncoder, (PyObject *) NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_kp_s_Convert_datetimes_to_ISO_8601_s); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_ComplexTypeEncoder, __pyx_n_s_ComplexTypeEncoder, (PyObject *) NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_kp_s_Convert_datetimes_to_ISO_8601_s); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":51
+  /* "convert_ids/convert_ids_to_objectids.pyx":53
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  *     """
  *     def _encode_datetime(self, in_datetime):             # <<<<<<<<<<<<<<
  *         """
  *         Converts a datetime into an ISO 8601 datetime string.
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_1_encode_datetime, 0, __pyx_n_s_ComplexTypeEncoder__encode_datet, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_1_encode_datetime, 0, __pyx_n_s_ComplexTypeEncoder__encode_datet, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_encode_datetime, __pyx_t_4) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_encode_datetime, __pyx_t_4) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":62
+  /* "convert_ids/convert_ids_to_objectids.pyx":64
  * 
  * 
  *     def _decode_datetime(self, in_string):             # <<<<<<<<<<<<<<
  *         """
  *         Tries to parse a string as an ISO 8601 datetime. If unsuccessful, returns the original string.
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_3_decode_datetime, 0, __pyx_n_s_ComplexTypeEncoder__decode_datet, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_3_decode_datetime, 0, __pyx_n_s_ComplexTypeEncoder__decode_datet, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_decode_datetime, __pyx_t_4) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
+  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_decode_datetime, __pyx_t_4) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":79
+  /* "convert_ids/convert_ids_to_objectids.pyx":81
  * 
  *     # pylint: disable=E0202
  *     def default(self, obj):             # <<<<<<<<<<<<<<
  *         if isinstance(obj, ObjectId):
  *             return str(obj)
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_5default, 0, __pyx_n_s_ComplexTypeEncoder_default, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11convert_ids_24convert_ids_to_objectids_18ComplexTypeEncoder_5default, 0, __pyx_n_s_ComplexTypeEncoder_default, NULL, __pyx_n_s_convert_ids_convert_ids_to_objec, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_default, __pyx_t_4) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_default, __pyx_t_4) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "convert_ids/convert_ids_to_objectids.pyx":47
+  /* "convert_ids/convert_ids_to_objectids.pyx":49
  *     return obj
  * 
  * class ComplexTypeEncoder(simplejson.JSONEncoder):             # <<<<<<<<<<<<<<
  *     """
  *     Convert datetimes to ISO-8601 strings while encoding a Python structure as JSON
  */
-  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_ComplexTypeEncoder, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_ComplexTypeEncoder, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ComplexTypeEncoder, __pyx_t_4) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ComplexTypeEncoder, __pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4313,6 +4472,153 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func) {
     return __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL);
 }
 #endif
+
+/* RaiseDoubleKeywords */
+        static void __Pyx_RaiseDoubleKeywordsError(
+    const char* func_name,
+    PyObject* kw_name)
+{
+    PyErr_Format(PyExc_TypeError,
+        #if PY_MAJOR_VERSION >= 3
+        "%s() got multiple values for keyword argument '%U'", func_name, kw_name);
+        #else
+        "%s() got multiple values for keyword argument '%s'", func_name,
+        PyString_AsString(kw_name));
+        #endif
+}
+
+/* ParseKeywords */
+        static int __Pyx_ParseOptionalKeywords(
+    PyObject *kwds,
+    PyObject **argnames[],
+    PyObject *kwds2,
+    PyObject *values[],
+    Py_ssize_t num_pos_args,
+    const char* function_name)
+{
+    PyObject *key = 0, *value = 0;
+    Py_ssize_t pos = 0;
+    PyObject*** name;
+    PyObject*** first_kw_arg = argnames + num_pos_args;
+    while (PyDict_Next(kwds, &pos, &key, &value)) {
+        name = first_kw_arg;
+        while (*name && (**name != key)) name++;
+        if (*name) {
+            values[name-argnames] = value;
+            continue;
+        }
+        name = first_kw_arg;
+        #if PY_MAJOR_VERSION < 3
+        if (likely(PyString_CheckExact(key)) || likely(PyString_Check(key))) {
+            while (*name) {
+                if ((CYTHON_COMPILING_IN_PYPY || PyString_GET_SIZE(**name) == PyString_GET_SIZE(key))
+                        && _PyString_Eq(**name, key)) {
+                    values[name-argnames] = value;
+                    break;
+                }
+                name++;
+            }
+            if (*name) continue;
+            else {
+                PyObject*** argname = argnames;
+                while (argname != first_kw_arg) {
+                    if ((**argname == key) || (
+                            (CYTHON_COMPILING_IN_PYPY || PyString_GET_SIZE(**argname) == PyString_GET_SIZE(key))
+                             && _PyString_Eq(**argname, key))) {
+                        goto arg_passed_twice;
+                    }
+                    argname++;
+                }
+            }
+        } else
+        #endif
+        if (likely(PyUnicode_Check(key))) {
+            while (*name) {
+                int cmp = (**name == key) ? 0 :
+                #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION >= 3
+                    (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
+                #endif
+                    PyUnicode_Compare(**name, key);
+                if (cmp < 0 && unlikely(PyErr_Occurred())) goto bad;
+                if (cmp == 0) {
+                    values[name-argnames] = value;
+                    break;
+                }
+                name++;
+            }
+            if (*name) continue;
+            else {
+                PyObject*** argname = argnames;
+                while (argname != first_kw_arg) {
+                    int cmp = (**argname == key) ? 0 :
+                    #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION >= 3
+                        (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
+                    #endif
+                        PyUnicode_Compare(**argname, key);
+                    if (cmp < 0 && unlikely(PyErr_Occurred())) goto bad;
+                    if (cmp == 0) goto arg_passed_twice;
+                    argname++;
+                }
+            }
+        } else
+            goto invalid_keyword_type;
+        if (kwds2) {
+            if (unlikely(PyDict_SetItem(kwds2, key, value))) goto bad;
+        } else {
+            goto invalid_keyword;
+        }
+    }
+    return 0;
+arg_passed_twice:
+    __Pyx_RaiseDoubleKeywordsError(function_name, key);
+    goto bad;
+invalid_keyword_type:
+    PyErr_Format(PyExc_TypeError,
+        "%.200s() keywords must be strings", function_name);
+    goto bad;
+invalid_keyword:
+    PyErr_Format(PyExc_TypeError,
+    #if PY_MAJOR_VERSION < 3
+        "%.200s() got an unexpected keyword argument '%.200s'",
+        function_name, PyString_AsString(key));
+    #else
+        "%s() got an unexpected keyword argument '%U'",
+        function_name, key);
+    #endif
+bad:
+    return -1;
+}
+
+/* RaiseArgTupleInvalid */
+        static void __Pyx_RaiseArgtupleInvalid(
+    const char* func_name,
+    int exact,
+    Py_ssize_t num_min,
+    Py_ssize_t num_max,
+    Py_ssize_t num_found)
+{
+    Py_ssize_t num_expected;
+    const char *more_or_less;
+    if (num_found < num_min) {
+        num_expected = num_min;
+        more_or_less = "at least";
+    } else {
+        num_expected = num_max;
+        more_or_less = "at most";
+    }
+    if (exact) {
+        more_or_less = "exactly";
+    }
+    PyErr_Format(PyExc_TypeError,
+                 "%.200s() takes %.8s %" CYTHON_FORMAT_SSIZE_T "d positional argument%.1s (%" CYTHON_FORMAT_SSIZE_T "d given)",
+                 func_name, more_or_less, num_expected,
+                 (num_expected == 1) ? "" : "s", num_found);
+}
+
+/* None */
+        static CYTHON_INLINE void __Pyx_RaiseClosureNameError(const char *varname) {
+    PyErr_Format(PyExc_NameError, "free variable '%s' referenced before assignment in enclosing scope", varname);
+}
 
 /* FetchCommonType */
         static PyTypeObject* __Pyx_FetchCommonType(PyTypeObject* type) {
@@ -5297,148 +5603,6 @@ return_ne:
     #endif
     return (equals == Py_NE);
 #endif
-}
-
-/* RaiseArgTupleInvalid */
-            static void __Pyx_RaiseArgtupleInvalid(
-    const char* func_name,
-    int exact,
-    Py_ssize_t num_min,
-    Py_ssize_t num_max,
-    Py_ssize_t num_found)
-{
-    Py_ssize_t num_expected;
-    const char *more_or_less;
-    if (num_found < num_min) {
-        num_expected = num_min;
-        more_or_less = "at least";
-    } else {
-        num_expected = num_max;
-        more_or_less = "at most";
-    }
-    if (exact) {
-        more_or_less = "exactly";
-    }
-    PyErr_Format(PyExc_TypeError,
-                 "%.200s() takes %.8s %" CYTHON_FORMAT_SSIZE_T "d positional argument%.1s (%" CYTHON_FORMAT_SSIZE_T "d given)",
-                 func_name, more_or_less, num_expected,
-                 (num_expected == 1) ? "" : "s", num_found);
-}
-
-/* RaiseDoubleKeywords */
-            static void __Pyx_RaiseDoubleKeywordsError(
-    const char* func_name,
-    PyObject* kw_name)
-{
-    PyErr_Format(PyExc_TypeError,
-        #if PY_MAJOR_VERSION >= 3
-        "%s() got multiple values for keyword argument '%U'", func_name, kw_name);
-        #else
-        "%s() got multiple values for keyword argument '%s'", func_name,
-        PyString_AsString(kw_name));
-        #endif
-}
-
-/* ParseKeywords */
-            static int __Pyx_ParseOptionalKeywords(
-    PyObject *kwds,
-    PyObject **argnames[],
-    PyObject *kwds2,
-    PyObject *values[],
-    Py_ssize_t num_pos_args,
-    const char* function_name)
-{
-    PyObject *key = 0, *value = 0;
-    Py_ssize_t pos = 0;
-    PyObject*** name;
-    PyObject*** first_kw_arg = argnames + num_pos_args;
-    while (PyDict_Next(kwds, &pos, &key, &value)) {
-        name = first_kw_arg;
-        while (*name && (**name != key)) name++;
-        if (*name) {
-            values[name-argnames] = value;
-            continue;
-        }
-        name = first_kw_arg;
-        #if PY_MAJOR_VERSION < 3
-        if (likely(PyString_CheckExact(key)) || likely(PyString_Check(key))) {
-            while (*name) {
-                if ((CYTHON_COMPILING_IN_PYPY || PyString_GET_SIZE(**name) == PyString_GET_SIZE(key))
-                        && _PyString_Eq(**name, key)) {
-                    values[name-argnames] = value;
-                    break;
-                }
-                name++;
-            }
-            if (*name) continue;
-            else {
-                PyObject*** argname = argnames;
-                while (argname != first_kw_arg) {
-                    if ((**argname == key) || (
-                            (CYTHON_COMPILING_IN_PYPY || PyString_GET_SIZE(**argname) == PyString_GET_SIZE(key))
-                             && _PyString_Eq(**argname, key))) {
-                        goto arg_passed_twice;
-                    }
-                    argname++;
-                }
-            }
-        } else
-        #endif
-        if (likely(PyUnicode_Check(key))) {
-            while (*name) {
-                int cmp = (**name == key) ? 0 :
-                #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION >= 3
-                    (PyUnicode_GET_SIZE(**name) != PyUnicode_GET_SIZE(key)) ? 1 :
-                #endif
-                    PyUnicode_Compare(**name, key);
-                if (cmp < 0 && unlikely(PyErr_Occurred())) goto bad;
-                if (cmp == 0) {
-                    values[name-argnames] = value;
-                    break;
-                }
-                name++;
-            }
-            if (*name) continue;
-            else {
-                PyObject*** argname = argnames;
-                while (argname != first_kw_arg) {
-                    int cmp = (**argname == key) ? 0 :
-                    #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION >= 3
-                        (PyUnicode_GET_SIZE(**argname) != PyUnicode_GET_SIZE(key)) ? 1 :
-                    #endif
-                        PyUnicode_Compare(**argname, key);
-                    if (cmp < 0 && unlikely(PyErr_Occurred())) goto bad;
-                    if (cmp == 0) goto arg_passed_twice;
-                    argname++;
-                }
-            }
-        } else
-            goto invalid_keyword_type;
-        if (kwds2) {
-            if (unlikely(PyDict_SetItem(kwds2, key, value))) goto bad;
-        } else {
-            goto invalid_keyword;
-        }
-    }
-    return 0;
-arg_passed_twice:
-    __Pyx_RaiseDoubleKeywordsError(function_name, key);
-    goto bad;
-invalid_keyword_type:
-    PyErr_Format(PyExc_TypeError,
-        "%.200s() keywords must be strings", function_name);
-    goto bad;
-invalid_keyword:
-    PyErr_Format(PyExc_TypeError,
-    #if PY_MAJOR_VERSION < 3
-        "%.200s() got an unexpected keyword argument '%.200s'",
-        function_name, PyString_AsString(key));
-    #else
-        "%s() got an unexpected keyword argument '%U'",
-        function_name, key);
-    #endif
-bad:
-    return -1;
 }
 
 /* Import */
